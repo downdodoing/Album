@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.example.album.mydefineimageview.MyImageView
+            android:id="@+id/main_grid_image"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/albums_bg"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="18dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/friends_sends_pictures_no" >
+        </com.example.album.mydefineimageview.MyImageView>
+
+        <TextView
+            android:id="@+id/main_grid_showNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/albums_icon_bg"
+            android:gravity="center" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/main_grid_showFolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+</LinearLayout>
